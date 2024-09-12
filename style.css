@@ -233,3 +233,55 @@ header{
     padding-left: 10px;
     
 }
+#Experience-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#Experience-container button {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-top: 1rem;
+}
+#Experience-container button img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+
+}
+#experience-part{
+    width: 100%;
+}
+.experience-form{
+    position: relative;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 10px;
+}
+.experience-form label{
+    position:absolute;
+
+    padding: 0px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.experience-form input{
+    height: 40px;
+    padding-top: 20px;
+    width: 100%;
+    padding-left: 10px;
+    
+}
