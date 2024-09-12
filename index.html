@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h3>Resume Generator</h3>
+            <p>Created by M.hassaan Qureshi</p>
+        </div>
+    </header>
+    <div class="mid-section">
+        <div class="mid-head">
+            <h1>Resume</h1>
+            <p>Please Enter Your Details</p>
+        </div>
+        <div class="form-part">
+            <h3 id="detail-head">Enter Your Personal Information</h3>
+            <form action="" id="pdf-form">
+                <div class="form-name">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="user-name">
+                </div>
+                <div class="form-fname">
+                    <label for="role">Role:</label>
+                    <input type="text" name="role" id="user-role">
+                </div>
+                <h3 id="detail-head">Enter Your Contact Details</h3>
+                <div class="form-name">
+                    <label for="contact">Contact:</label>
+                    <input type="number" name="contact" id="user-contact">
+                </div>
+                <div class="form-fname">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="user-email">
+                </div>
+                <div class="form-fname">
+                    <label for="address">Address:</label>
+                    <input type="text" name="address" id="user-address">
+                </div>
+                <div id="skills-container">
+                    <h4>Enter Skills</h4>
+                <div class="skills-form">
+                    <label for="skills">Skills:</label>
+                    <input type="text" name="skills" id="user-skills">
+                    <button type="button" id="add-skill"><img src="/images/plus.png" alt=""></button>
+                </div>
+                </div>
+                <div id="Education-container">
+                    <h4>Enter Education</h4>
+                   
+                <div class="education-form">
+                   <div id="program-part">
+                    <label for="program">program:</label>
+                    <input type="text" name="program" id="user-program">
+                   </div>
+                   <div id="school-part">
+                    <label for="school">School:</label>
+                    <input type="text" name="school" id="user-school">
+                   </div>
+                  
+                </div>
+                <button type="button" id="add-education"><img src="/images/plus.png" alt=""></button>
+                </div>
+                <div class="image-form">
+                    <label for="image"></label>
+                    <span class="upload-text">Click or drag an image to this area to upload</span>
+                    <input type="file" accept="image/*" name="image" id="profile">
+                </div>
+                <button type="button" onclick="generatePDF()">Generate PDF</button>
+            </form>
+        </div>
+    </div>
+    
+
+    
+    <script src="script.js" defer></script>
+</body>
+
+</html>
